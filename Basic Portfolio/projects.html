@@ -1,0 +1,106 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Singh - Software Engineer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    
+    <header class="navbar">
+            <div class="container">
+                <a href="index.html" class="nav-logo">Aman Singh</a>
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="skills.html" class="nav-link">Skills</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="experience.html" class="nav-link">Experience</a>
+                    <a href="coding-profiles.html" class="nav-link">Coding Profiles</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+    <main>
+        <section id="projects" class="container page-section">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">A selection of my recent works</p>
+            <div class="projects-grid">
+    
+                <div class="project-card" 
+                     data-title="Mobile Price Prediction Analysis (DS/ML)"
+                     data-img="assets/project1.png"
+                     data-description="An in-depth analysis of mobile phone models using data science to uncover market trends. Performed feature engineering, and visualized key data insights using Matplotlib and Plotly."
+                     data-tech="Python, Pandas, Matplotlib, Plotly"
+                     data-github-link="https://github.com/amansinghrp/Mobile-Model-Analysis"
+                     data-demo-link="https://mobile-model-analysis.streamlit.app/">
+                    <img src="assets/project1.png" alt="Mobile Analysis Project" class="project-thumbnail">
+                    <div class="project-info">
+                        <h3 class="project-title">Mobile Price Prediction</h3>
+                        <p class="project-desc-short">Data-driven analysis of mobile phone market trends.</p>
+                    </div>
+                </div>
+    
+                <div class="project-card"
+                     data-title="Stock Price Prediction App"
+                     data-img="assets/project2.png"
+                     data-description="A Stock price Prediction model that uses Stacked LSTM to analyse the trends in the stock prices of Apple Company. The Project showcases the use of time-series analysis."
+                     data-tech="Python, Numpy, Pandas, ML, LSTM"
+                     data-github-link="https://github.com/amansinghrp/Stock-Price-Prediction"
+                     data-demo-link="">
+                    <img src="assets/project2.png" alt="Stock Price Prediction App" class="project-thumbnail">
+                    <div class="project-info">
+                        <h3 class="project-title">Stock Price Prediction App</h3>
+                        <p class="project-desc-short">A Model based on Stacked LSTM that performs stock price prediction</p>
+                    </div>
+                </div>
+    
+                <div class="project-card" 
+                     data-title="Sentiment Analysis: Online Course Reviews"
+                     data-img="assets/project3.png"
+                     data-description="Developed a sentiment analysis system to evaluate student reviews of online courses. Implemented text preprocessing, feature extraction using Bag-of-Words, TF-IDF and Word2Vec, and classification with Naive Bayes, KNN and SVM to determine positive, negative, or neutral feedback."
+                     data-tech="Python, NLP,  Sci-kit Learn, NLTK"
+                     data-github-link="https://github.com/amansinghrp/Sentiment-Analysis">
+                    <img src="assets/project3.png" alt="Sentiment Analysis: Online Course Reviews" class="project-thumbnail">
+                    <div class="project-info">
+                        <h3 class="project-title">Sentiment Analysis: Online Course Reviews</h3>
+                        <p class="project-desc-short">A comparitive analysis of different ML algorithms for sentiment analysis</p>
+                    </div>
+                </div>
+    
+                <div class="project-card"
+                     data-title="NutriChat: Nutrition Analysis and Assistant"
+                     data-img="assets/project4.png"
+                     data-description="A personal chat analysis app along with an inetractive health chatbot. Ask your doubts, get personalised recommenadtions and get detailed diet plans, all at one place."
+                     data-tech="Python, Streamlit, APIs, Nutritionix, OpenRouter + DeepSeek R1"
+                     data-github-link="https://github.com/amansinghrp/Nutrition-Analysis-Chatbot"
+                     data-demo-link="">
+                    <img src="assets/project4.png" alt="NutriChat: Nutrition Analysis and Assistant" class="project-thumbnail">
+                    <div class="project-info">
+                        <h3 class="project-title">NutriChat: Nutrition Analysis and Assistant</h3>
+                        <p class="project-desc-short">Interactive diet anlysis and an Interactive chatbot for diet plans and many more.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    
+        <div id="project-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <img id="modal-img" src="" alt="Project Image">
+                <h2 id="modal-title"></h2>
+                <div id="modal-tech" class="tech-stack"></div>
+                <p id="modal-description"></p>
+                <div class="modal-links">
+                    <a id="modal-github-link" href="#" class="btn btn-secondary" target="_blank">GitHub Repo</a>
+                    <a id="modal-demo-link" href="#" class="btn btn-primary">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
